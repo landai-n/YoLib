@@ -21,6 +21,7 @@ INCLUDE=	-I include/				\
 		-I include/network/			\
 		-I include/utils/			\
 		-I include/thread/			\
+		-I include/container/			\
 
 CXXFLAGS=	-g -Wall -Wshadow -Wextra -std=c++11 $(INCLUDE)
 
