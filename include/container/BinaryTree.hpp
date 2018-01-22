@@ -47,7 +47,7 @@ namespace	Yo
 	return (nullptr);
       if (p_node->m_key == p_key)
 	return (p_node);
-      if (p_node->m_left != nullptr && p_node->m_left->m_value < p_key)
+      if (p_node->m_left != nullptr && p_node->m_left->m_value >= p_key)
 	return (Find(p_key, p_node->m_left, p_node));
       return (Find(p_key, p_node->m_right, p_node));
     }
